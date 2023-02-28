@@ -1,0 +1,192 @@
+/* Importação de fonte via Google Fonts --------- */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+/* Reset básico --------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body --------- */
+body {
+    background-color: #33475B;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Header --------- */
+header {
+    height: auto;
+    padding: 0 2%;
+    background-color: #FFFFFF;
+}
+
+.container-elementos-header {
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+    cursor: pointer;
+}
+
+.titulo-principal > a{
+    color: #0000EE;
+}
+
+.titulo-principal, .logo-header, .label-pesquisa {
+    margin: 20px 0;
+}
+
+.titulo-principal {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.label-pesquisa {
+    background-color: #DB1E8C;
+    height: 40px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+}
+
+.input-pesquisa {
+    background-color: transparent;
+    padding: 4px;
+    border: none;
+}
+
+::placeholder {
+    color: #FF97D3;
+}
+
+main {
+    height: auto;
+    padding: 3rem 2%;
+}
+
+.container-elementos-main {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    box-sizing: border-box;
+    gap: 1.25rem 1.25rem;
+}
+
+.item-principal {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: none;
+    padding: 2rem 4%;
+    position: relative;
+}
+
+.item-principal-titulo {
+    color: #364372;
+}
+
+.item-principal-textos {
+    margin: 2rem 0;
+}
+
+.item-principal-para {
+    font-weight: 400;
+    line-height: 1.25rem;
+    font-size: 1rem;
+}
+
+.item-principal input{
+    width: 139px;
+    height: 47px;
+    background-color: inherit;
+    border: 1px solid #264fec;
+    color: #264fec;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 1%;
+    left: 4%;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.item-principal input:hover {
+    background-color: #264fec;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 1rem 2%;
+}
+
+.container-elementos-footer {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-elementos-footer-div2 {
+    margin: 2rem 0;
+}
+
+.container-elementos-footer-div3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.container-elementos-footer-div3-paragrafos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 500px) {
+    .container-elementos-header {
+        max-width: 768px;
+    }
+
+    .container-elementos-main {
+        max-width: 768px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    header {
+        padding: 0 2%;
+    }
+
+    .container-elementos-header {
+        max-width: 1280px;
+        flex-direction: row;
+    }
+
+    .container-elementos-main {
+        max-width: 1280px;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .container-elementos-footer {
+        flex-direction: row;
+        max-width: 1280px;
+    }
+}
